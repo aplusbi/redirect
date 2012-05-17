@@ -1,0 +1,17 @@
+OASISFormat: 0.2
+Name:        redirect
+Version:     0.1
+Synopsis:    Reads stdin and writes it to a file and to stdout
+Authors:     Niki Yoshiuchi
+License:     Apache-2.0
+Plugins:      DevFiles (0.2)
+
+Executable redirect
+  Path:       .
+  Install: true
+  Custom: true
+  CompiledObject: best
+  BuildTools: ocamlbuild
+  MainIs:     redirect.ml
+  BuildDepends: unix
+  
