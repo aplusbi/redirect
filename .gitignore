@@ -1,0 +1,8 @@
+_build/
+*.o
+*.cmo
+*.cmx
+*.cmi
+*.swp
+*.byte
+*.native
