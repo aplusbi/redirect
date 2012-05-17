@@ -3,7 +3,7 @@ let help () =
     ignore (Unix.write Unix.stdout usage 0 (String.length usage))
 
 let _ =
-    if Array.length Sys.argv = 1 then help ()
+    if Array.length Sys.argv < 2 then help ()
     else
         begin
             let file = Unix.openfile Sys.argv.(1) [Unix.O_WRONLY; Unix.O_CREAT; Unix.O_TRUNC] 0o666 in
